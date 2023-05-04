@@ -1,0 +1,21 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo > a > img {
+    height: 60px;
+    width: 100px;
+}
+
+.menu-header > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-header > ul > li {
+    list-style: none;
+    margin-right: 20px;
+}

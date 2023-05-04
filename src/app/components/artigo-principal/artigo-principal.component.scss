@@ -1,0 +1,29 @@
+.container__artigo-principal {
+    // border: 2px solid white;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 600px;
+    height: 550px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.artigo__titulo > h2 {
+    margin-top: 10px;
+
+}
+
+.artigo__descricao {
+    margin-top: 20px;
+}
+
+.artigo__descricao > p > a{
+    color: gray;
+}
+
+.artigo__foto > img {
+    width: 100%;
+    min-width: 600px;
+}

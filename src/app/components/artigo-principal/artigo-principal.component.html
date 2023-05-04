@@ -1,0 +1,18 @@
+<div class="container__artigo-principal">
+    <span>Autor: {{autor}}</span>
+    <div class="artigo__foto">
+        <img src="{{imagem}}"
+         alt=""
+         height="300px">
+    </div>
+    <div class="artigo__titulo">
+        <h2><a [routerLink]="['artigos', id]">{{titulo}}</a></h2>
+    </div>
+    <div class="artigo__descricao">
+        <p>
+            <a [routerLink]="['artigos', id]">
+                {{descricao}}
+            </a>
+        </p>
+    </div>
+</div>

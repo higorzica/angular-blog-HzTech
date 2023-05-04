@@ -1,0 +1,27 @@
+<app-card-titulo></app-card-titulo>
+<div class="container__artigos">
+    
+        <div class="artigo__principal border" *ngFor="let item of cardPrincipal">
+            <app-artigo-principal
+            id="{{item.id}}"
+            autor="{{item.autor}}"
+            titulo="{{item.titulo}}"
+            categoria="{{item.categoria}}"
+            descricao="{{item.descricao}}"
+            imagem="{{item.imagem}}">
+            </app-artigo-principal>
+        </div>
+        <div class="container__secundarios">
+            <div class="artigo__secundarios" *ngFor="let item of cardSecundario" style="display: flex;flex-direction: column;">
+                    <app-artigo-secundario
+                    id="{{item.id}}"
+                    autor="{{item.autor}}"
+                    titulo="{{item.titulo}}"
+                    categoria="{{item.categoria}}"
+                    descricao="{{item.descricao}}"
+                    imagem="{{item.imagem}}"
+                    >
+                    </app-artigo-secundario>
+            </div>
+        </div>
+</div>
