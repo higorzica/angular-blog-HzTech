@@ -13,7 +13,7 @@
 .artigo-secundario__foto > img {
     width: 200px;
     min-width: 200px;
-    margin-right: 20px;
+    margin-right: 40px;
     margin-bottom: 20px;
 }
 
@@ -42,6 +42,12 @@
 .artigo-secundario__descricao > p > a{
     color: gray;
     font-size: 12px;
+    overflow: hidden; // Removendo barra de rolagem
+    text-overflow: ellipsis; // Adicionando "..." ao final
+    display: -webkit-box;
+    -webkit-line-clamp: 6; // Quantidade de linhas
+    -webkit-box-orient: vertical; 
+
 }
 
 @media screen and (max-width: 670px) {
@@ -51,6 +57,9 @@
         display: flex;
         flex-direction: column;
         margin-left: 20px;
+    }
+    .artigo-secundario__titulo > h2 {
+        font-size: 15px;
     }
 
 }

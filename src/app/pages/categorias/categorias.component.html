@@ -2,24 +2,46 @@
 <h2>Filtrar nossos conteúdos por categoria:</h2>
 <div class="container-categorias">
   <div class="polaroid">
-      <img src="../../../assets/icones/angular.png" alt="imagen" style="width:100%"/>
-      <div class="container">
-          <h3>Angular Framework</h3>
-      </div>
+    <button (click)="filtrarProgramacao()">
+        <img src="../../../assets/icones/angular.png" alt="imagen"/>
+        <div class="container">
+            <h3>Angular Framework</h3>
+        </div>
+    </button>
   </div>
 
   <div class="polaroid">
-      <img src="../../../assets/icones/france.png" alt="imagen" style="width:100%"/>
-      <div class="container">
-          <h3>Vida na França</h3>
-      </div>
+    <button (click)="filtrarViagens()">
+        <img src="../../../assets/icones/france.png" alt="imagen"/>
+        <div class="container">
+            <h3>Vida na França</h3>
+        </div>
+
+    </button>
   </div>
 
   <div class="polaroid">
-      <img src="../../../assets/icones/freelancer.png" alt="imagen" style="width:100%"/>
-      <div class="container">
-          <h3>Freelancer</h3>
-      </div>
-  </div>
+    <button (click)="filtrarInformatica()">
+        <img src="../../../assets/icones/freelancer.png" alt="imagen"/>
+        <div class="container">
+            <h3>Freelancer</h3>
+        </div>
 
+    </button>
+  </div>
+  
+</div>
+
+<div class="container__secundarios">
+    <div class="artigo__secundarios" *ngFor="let item of cardSecundario" style="display: flex;flex-direction: column;">
+            <app-artigo-secundario
+            id="{{item.id}}"
+            autor="{{item.autor}}"
+            titulo="{{item.titulo}}"
+            categoria="{{item.categoria}}"
+            descricao="{{item.descricao}}"
+            imagem="{{item.imagem}}"
+            >
+            </app-artigo-secundario>
+    </div>
 </div>

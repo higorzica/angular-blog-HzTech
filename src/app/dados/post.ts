@@ -13,7 +13,7 @@ export const Post = [
         "id": "2",
         "titulo": "As 5 principais extensões do vscode",
         "categoria": "Programação",
-        "descricao": "Para melhorar sua produtividade essas extensões estão fazendo muito bem seu papel.",
+        "descricao": "Para melhorar sua produtividade essas extensões estão fazendo muito bem seu papel.O Git Lens tem como objetivo auxiliar na verificação de quem e onde realizou uma alteração em um determinado arquivo, no próprio VS Code. O Material Icon Theme é uma excelente extensão para uma organização visual dos seus arquivos e pastas no VS Code. O Auto-Rename, no momento em que você alterar uma das tags, a outra tag será alterada automaticamente junto. REST Client que é ótima para realizar testes de requisições HTTP para APIs e visualizar as respostas sem a necessidade de utilizar aplicativos externos, como Insomnia ou Postman, para cada teste de requisição que você quiser efetuar.",
         "imagem": "https://code.visualstudio.com/opengraphimg/opengraph-home.png",
         "autor": "Higor Zica",
         "ativo": "Ativo",

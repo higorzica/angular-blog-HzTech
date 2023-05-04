@@ -11,7 +11,7 @@
 .container__secundarios {
     display: flex;
     flex-direction: column;
-    margin-left: 50px;
+    // margin-left: 50px;
 }
 
 
@@ -37,5 +37,9 @@
     .container__artigos {
         display: flex;
         flex-direction: column;
+    }
+    .container__secundarios{
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 }

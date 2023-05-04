@@ -8,10 +8,11 @@ h1 {
     font-family: monospace;
     font-size: 25px;
     border-right: 4px solid;
-    width: 30ch;
+    width: 25ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(30), blinking 1s infinite step-end alternate;
+    animation: typing 2s steps(25), blinking 1s infinite step-end alternate;
+    margin: 10px;
   }
 
 .center {
@@ -33,7 +34,7 @@ h1 {
   }
 
 .historia{
-    margin: 100px;
+    margin: 50px;
     text-align: center;
     display: flex;
     justify-content: center;
